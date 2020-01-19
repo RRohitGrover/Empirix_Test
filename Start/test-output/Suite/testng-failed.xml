@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="BrowserName" value="chrome"/>
+  <parameter name="url" value="https://services.empirix.com/"/>
+  <test name="Testwithchrome(failed)" parallel="tests">
+    <parameter name="BrowserName" value="chrome"/>
+    <parameter name="url" value="https://services.empirix.com/"/>
+    <classes>
+      <class name="Emprix.Start.Empirix_Test">
+        <methods>
+          <include name="teardowntest"/>
+          <include name="login" invocation-numbers="0"/>
+          <include name="setuptest"/>
+        </methods>
+      </class> <!-- Emprix.Start.Empirix_Test -->
+    </classes>
+  </test> <!-- Testwithchrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->

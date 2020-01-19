@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite4" duration-ms="12388" started-at="2020-01-19T09:36:53Z" finished-at="2020-01-19T09:37:05Z">
+    <groups>
+    </groups>
+    <test name="Test4" duration-ms="12388" started-at="2020-01-19T09:36:53Z" finished-at="2020-01-19T09:37:05Z">
+      <class name="Emprix.Start.Emprix_Login">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:Emprix.Start.Emprix_Login@28d25987]" name="setup" is-config="true" duration-ms="3155" started-at="2020-01-19T15:06:53Z" finished-at="2020-01-19T15:06:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="login()[pri:0, instance:Emprix.Start.Emprix_Login@28d25987]" name="login" duration-ms="8813" started-at="2020-01-19T15:06:56Z" finished-at="2020-01-19T15:07:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Emprix.Start.Emprix_Login@28d25987]" name="teardown" is-config="true" duration-ms="339" started-at="2020-01-19T15:07:05Z" finished-at="2020-01-19T15:07:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Emprix.Start.Emprix_Login -->
+    </test> <!-- Test4 -->
+  </suite> <!-- Suite4 -->
+</testng-results>
