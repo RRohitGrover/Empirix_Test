@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">14 methods, 2 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Emprix.Start.Empirix_Updated" hash-for-method="Select_Japense_language">Select_Japense_language</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Emprix.Start.Empirix_Updated" hash-for-method="logout">logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +119,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Emprix.Start.Empirix_Updated" hash-for-method="Select_English_language">Select_English_language</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Emprix.Start.Empirix_Updated" hash-for-method="Select_English_language">Select_English_language</a> <!-- method navigator-link -->
@@ -117,6 +141,16 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Emprix.Start.Empirix_Updated" hash-for-method="information">information</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Emprix.Start.Empirix_Updated" hash-for-method="launch">launch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Emprix.Start.Empirix_Updated" hash-for-method="launch">launch</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -127,7 +161,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Emprix.Start.Empirix_Updated" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Emprix.Start.Empirix_Updated" hash-for-method="logout">logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Emprix.Start.Empirix_Updated" hash-for-method="tabs">tabs</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -147,12 +191,57 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Emprix.Start.Empirix_Updated</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Select_Japense_language">
+                  </a> <!-- Select_Japense_language -->
+                  <span class="method-name">Select_Japense_language</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at Emprix.Start.Empirix_Updated.Select_Japense_language(Empirix_Updated.java:211)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logout">
+                  </a> <!-- logout -->
+                  <span class="method-name">logout</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at Emprix.Start.Empirix_Updated.logout(Empirix_Updated.java:226)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">Emprix.Start.Empirix_Updated</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Select_English_language">
+                  </a> <!-- Select_English_language -->
+                  <span class="method-name">Select_English_language</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="Select_English_language">
@@ -176,9 +265,30 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="information">
+                  </a> <!-- information -->
+                  <span class="method-name">information</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="launch">
                   </a> <!-- launch -->
                   <span class="method-name">launch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="launch">
+                  </a> <!-- launch -->
+                  <span class="method-name">launch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -202,6 +312,13 @@
                   <span class="method-name">tabs</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tabs">
+                  </a> <!-- tabs -->
+                  <span class="method-name">tabs</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
@@ -213,13 +330,19 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
   &lt;test name=&quot;Testonchrome&quot;&gt;
     &lt;parameter name=&quot;BrowserName&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Emprix.Start.Empirix_Updated&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Testonchrome --&gt;
+  &lt;test name=&quot;Testonfirefox&quot;&gt;
+    &lt;parameter name=&quot;BrowserName&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Emprix.Start.Empirix_Updated&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Testonfirefox --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -232,6 +355,9 @@
             <ul>
               <li>
                 <span class="test-name">Testonchrome (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Testonfirefox (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -257,40 +383,68 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(14);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'launch')
 data.setCell(0, 2, 'Emprix.Start.Empirix_Updated')
-data.setCell(0, 3, 41596);
+data.setCell(0, 3, 44705);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'login')
+data.setCell(1, 1, 'launch')
 data.setCell(1, 2, 'Emprix.Start.Empirix_Updated')
-data.setCell(1, 3, 27628);
+data.setCell(1, 3, 36804);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Select_Japense_language')
+data.setCell(2, 1, 'login')
 data.setCell(2, 2, 'Emprix.Start.Empirix_Updated')
-data.setCell(2, 3, 17798);
+data.setCell(2, 3, 30165);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'information')
+data.setCell(3, 1, 'login')
 data.setCell(3, 2, 'Emprix.Start.Empirix_Updated')
-data.setCell(3, 3, 16689);
+data.setCell(3, 3, 29226);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'Select_English_language')
+data.setCell(4, 1, 'Select_Japense_language')
 data.setCell(4, 2, 'Emprix.Start.Empirix_Updated')
-data.setCell(4, 3, 14345);
+data.setCell(4, 3, 17436);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'tabs')
+data.setCell(5, 1, 'information')
 data.setCell(5, 2, 'Emprix.Start.Empirix_Updated')
-data.setCell(5, 3, 2518);
+data.setCell(5, 3, 17278);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'logout')
+data.setCell(6, 1, 'information')
 data.setCell(6, 2, 'Emprix.Start.Empirix_Updated')
-data.setCell(6, 3, 2138);
+data.setCell(6, 3, 17198);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Select_English_language')
+data.setCell(7, 2, 'Emprix.Start.Empirix_Updated')
+data.setCell(7, 3, 14752);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Select_Japense_language')
+data.setCell(8, 2, 'Emprix.Start.Empirix_Updated')
+data.setCell(8, 3, 12725);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'Select_English_language')
+data.setCell(9, 2, 'Emprix.Start.Empirix_Updated')
+data.setCell(9, 3, 8859);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'tabs')
+data.setCell(10, 2, 'Emprix.Start.Empirix_Updated')
+data.setCell(10, 3, 3654);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'logout')
+data.setCell(11, 2, 'Emprix.Start.Empirix_Updated')
+data.setCell(11, 3, 2158);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'tabs')
+data.setCell(12, 2, 'Emprix.Start.Empirix_Updated')
+data.setCell(12, 3, 333);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'logout')
+data.setCell(13, 2, 'Emprix.Start.Empirix_Updated')
+data.setCell(13, 3, 56);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -321,61 +475,125 @@ return data;
                 <span class="method-name">setuptest(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">setuptest(firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">readfile</span>
-                <span class="method-start">3111 ms</span>
+                <span class="method-start">2555 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">launch</span>
-                <span class="method-start">3113 ms</span>
+                <span class="method-start">2556 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">readfile</span>
-                <span class="method-start">44712 ms</span>
+                <span class="method-start">34611 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">launch</span>
+                <span class="method-start">34611 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">readfile</span>
+                <span class="method-start">47264 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">44713 ms</span>
+                <span class="method-start">47265 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">readfile</span>
-                <span class="method-start">72343 ms</span>
+                <span class="method-start">71417 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login</span>
+                <span class="method-start">71418 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">readfile</span>
+                <span class="method-start">76492 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Select_English_language</span>
-                <span class="method-start">72345 ms</span>
+                <span class="method-start">76493 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">readfile</span>
-                <span class="method-start">86694 ms</span>
+                <span class="method-start">91246 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">tabs</span>
-                <span class="method-start">86696 ms</span>
+                <span class="method-start">91247 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">readfile</span>
-                <span class="method-start">89216 ms</span>
+                <span class="method-start">94902 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">information</span>
-                <span class="method-start">89218 ms</span>
+                <span class="method-start">94903 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">readfile</span>
-                <span class="method-start">105908 ms</span>
+                <span class="method-start">101584 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Select_English_language</span>
+                <span class="method-start">101585 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">readfile</span>
+                <span class="method-start">110446 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tabs</span>
+                <span class="method-start">110447 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">readfile</span>
+                <span class="method-start">110781 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">information</span>
+                <span class="method-start">110782 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">readfile</span>
+                <span class="method-start">112182 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Select_Japense_language</span>
-                <span class="method-start">105910 ms</span>
+                <span class="method-start">112183 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">readfile</span>
-                <span class="method-start">123709 ms</span>
+                <span class="method-start">127981 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Select_Japense_language</span>
+                <span class="method-start">127982 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">readfile</span>
+                <span class="method-start">129620 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">logout</span>
-                <span class="method-start">123710 ms</span>
+                <span class="method-start">129622 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">readfile</span>
+                <span class="method-start">140710 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logout</span>
+                <span class="method-start">140711 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
