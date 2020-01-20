@@ -25,7 +25,6 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.base.Empirix_Base;
-import com.util.Parameter;
 
 public class Empirix_Updated extends Empirix_Base{
 	public Properties prop;
@@ -147,8 +146,8 @@ public class Empirix_Updated extends Empirix_Base{
 		try
 		{
 //			Element("dashboard");Element("alerts");Element("tests");Element("variables1");Element("notifi");
-			waitFor(10,"dashboard");
-//		    driver.findElement(By.xpath(prop.getProperty("dashboard"))).isDisplayed();
+			waitFor(30,"dashboard");
+		    driver.findElement(By.xpath(prop.getProperty("dashboard"))).isDisplayed();
         	driver.findElement(By.xpath(prop.getProperty("alerts"))).isDisplayed();
         	driver.findElement(By.xpath(prop.getProperty("tests"))).isDisplayed();
         	driver.findElement(By.xpath(prop.getProperty("variables"))).isDisplayed();
@@ -172,7 +171,7 @@ public class Empirix_Updated extends Empirix_Base{
 				driver.findElement(By.xpath(prop.getProperty("dropdown"))).click();
 				Thread.sleep(2000);
 				driver.findElement(By.xpath(prop.getProperty("client"))).click();
-				Thread.sleep(2000);
+				waitFor(10,"clientname");
 				driver.findElement(By.xpath(prop.getProperty("clientname"))).isDisplayed();
 				driver.findElement(By.xpath(prop.getProperty("description"))).isDisplayed();
 				driver.findElement(By.xpath(prop.getProperty("subsstartdate"))).isDisplayed();
@@ -201,9 +200,9 @@ public class Empirix_Updated extends Empirix_Base{
 					driver.switchTo().alert().accept();
 					Thread.sleep(8000);
 					System.out.println("Japaense language selected on webpage");
-//					waitFor(10, "japalert");
+					waitFor(30, "japalert");
 					driver.findElement(By.xpath(prop.getProperty("japalert"))).click();
-					Thread.sleep(5000);
+					waitFor(20, "dropdown");
 				}
 				catch(Exception e)
 				   {
@@ -216,8 +215,9 @@ public class Empirix_Updated extends Empirix_Base{
 			{
 				try
 				{
+					Thread.sleep(4000);
 					driver.findElement(By.xpath(prop.getProperty("dropdown"))).click();
-					Thread.sleep(2000);
+					Thread.sleep(4000);
 					driver.findElement(By.xpath(prop.getProperty("japlogout"))).click();
 				}
 				catch(Exception e)
@@ -227,11 +227,11 @@ public class Empirix_Updated extends Empirix_Base{
 					}
 			}
 	
-//        @AfterTest
-//        public void teardown()
-//        {
-//        	driver.close();
-//        }
+        @AfterTest
+        public void teardown()
+        {
+        	driver.close();
+        }
         }
 
 	/*@AfterMethod

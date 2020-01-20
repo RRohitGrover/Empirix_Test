@@ -5,6 +5,12 @@
     <classes>
       <class name="Emprix.Start.Empirix_Updated">
         <methods>
+          <include name="logout"/>
+          <include name="information"/>
+          <include name="Select_English_language"/>
+          <include name="launch"/>
+          <include name="tabs"/>
+          <include name="Select_Japense_language"/>
           <include name="login"/>
         </methods>
       </class> <!-- Emprix.Start.Empirix_Updated -->

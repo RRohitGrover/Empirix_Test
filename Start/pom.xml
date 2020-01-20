@@ -34,7 +34,7 @@
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.1.0</version>
-    <scope>test</scope>
+    <scope>compile</scope>
 </dependency>
     <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
@@ -64,7 +64,7 @@
           <version>2.22.1</version>
          <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testng_Empirix.xml</suiteXmlFile>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
         </plugin>

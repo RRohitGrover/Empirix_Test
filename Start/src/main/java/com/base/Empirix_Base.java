@@ -9,8 +9,6 @@ import org.testng.annotations.Parameters;
 
 import com.beust.jcommander.Parameter;
 
-import Emprix.Start.Empirix_Updated;
-
 public class Empirix_Base{
 	
 	public WebDriver driver;

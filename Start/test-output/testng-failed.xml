@@ -8,11 +8,8 @@
       <class name="Emprix.Start.Empirix_Updated">
         <methods>
           <include name="readfile"/>
-          <include name="readfile"/>
-          <include name="logout"/>
+          <include name="information"/>
           <include name="setuptest"/>
-          <include name="setuptest"/>
-          <include name="Select_Japense_language"/>
         </methods>
       </class> <!-- Emprix.Start.Empirix_Updated -->
     </classes>
