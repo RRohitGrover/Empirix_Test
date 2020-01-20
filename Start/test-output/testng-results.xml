@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite4" duration-ms="12388" started-at="2020-01-19T09:36:53Z" finished-at="2020-01-19T09:37:05Z">
+  <suite name="Suite" duration-ms="125853" started-at="2020-01-20T01:44:02Z" finished-at="2020-01-20T01:46:08Z">
     <groups>
     </groups>
-    <test name="Test4" duration-ms="12388" started-at="2020-01-19T09:36:53Z" finished-at="2020-01-19T09:37:05Z">
-      <class name="Emprix.Start.Emprix_Login">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:Emprix.Start.Emprix_Login@28d25987]" name="setup" is-config="true" duration-ms="3155" started-at="2020-01-19T15:06:53Z" finished-at="2020-01-19T15:06:56Z">
+    <test name="Testonchrome" duration-ms="125853" started-at="2020-01-20T01:44:02Z" finished-at="2020-01-20T01:46:08Z">
+      <class name="Emprix.Start.Empirix_Updated">
+        <test-method status="PASS" signature="setuptest(java.lang.String)[pri:0, instance:Emprix.Start.Empirix_Updated@4501b7af]" name="setuptest" is-config="true" duration-ms="3097" started-at="2020-01-20T07:14:02Z" finished-at="2020-01-20T07:14:05Z">
           <params>
             <param index="0">
               <value>
@@ -17,16 +17,64 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login()[pri:0, instance:Emprix.Start.Emprix_Login@28d25987]" name="login" duration-ms="8813" started-at="2020-01-19T15:06:56Z" finished-at="2020-01-19T15:07:05Z">
+        </test-method> <!-- setuptest -->
+        <test-method status="PASS" signature="readfile()[pri:0, instance:Emprix.Start.Empirix_Updated@4501b7af]" name="readfile" is-config="true" duration-ms="2" started-at="2020-01-20T07:14:05Z" finished-at="2020-01-20T07:14:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readfile -->
+        <test-method status="PASS" signature="launch()[pri:1, instance:Emprix.Start.Empirix_Updated@4501b7af]" name="launch" duration-ms="41596" started-at="2020-01-20T07:14:05Z" finished-at="2020-01-20T07:14:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method status="PASS" signature="readfile()[pri:0, instance:Emprix.Start.Empirix_Updated@4501b7af]" name="readfile" is-config="true" duration-ms="1" started-at="2020-01-20T07:14:46Z" finished-at="2020-01-20T07:14:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readfile -->
+        <test-method status="PASS" signature="login()[pri:2, instance:Emprix.Start.Empirix_Updated@4501b7af]" name="login" duration-ms="27628" started-at="2020-01-20T07:14:46Z" finished-at="2020-01-20T07:15:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:Emprix.Start.Emprix_Login@28d25987]" name="teardown" is-config="true" duration-ms="339" started-at="2020-01-19T15:07:05Z" finished-at="2020-01-19T15:07:05Z">
+        <test-method status="PASS" signature="readfile()[pri:0, instance:Emprix.Start.Empirix_Updated@4501b7af]" name="readfile" is-config="true" duration-ms="2" started-at="2020-01-20T07:15:14Z" finished-at="2020-01-20T07:15:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- Emprix.Start.Emprix_Login -->
-    </test> <!-- Test4 -->
-  </suite> <!-- Suite4 -->
+        </test-method> <!-- readfile -->
+        <test-method status="PASS" signature="Select_English_language()[pri:3, instance:Emprix.Start.Empirix_Updated@4501b7af]" name="Select_English_language" duration-ms="14345" started-at="2020-01-20T07:15:14Z" finished-at="2020-01-20T07:15:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Select_English_language -->
+        <test-method status="PASS" signature="readfile()[pri:0, instance:Emprix.Start.Empirix_Updated@4501b7af]" name="readfile" is-config="true" duration-ms="2" started-at="2020-01-20T07:15:28Z" finished-at="2020-01-20T07:15:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readfile -->
+        <test-method status="PASS" signature="tabs()[pri:4, instance:Emprix.Start.Empirix_Updated@4501b7af]" name="tabs" duration-ms="2518" started-at="2020-01-20T07:15:28Z" finished-at="2020-01-20T07:15:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tabs -->
+        <test-method status="PASS" signature="readfile()[pri:0, instance:Emprix.Start.Empirix_Updated@4501b7af]" name="readfile" is-config="true" duration-ms="2" started-at="2020-01-20T07:15:31Z" finished-at="2020-01-20T07:15:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readfile -->
+        <test-method status="PASS" signature="information()[pri:5, instance:Emprix.Start.Empirix_Updated@4501b7af]" name="information" duration-ms="16689" started-at="2020-01-20T07:15:31Z" finished-at="2020-01-20T07:15:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- information -->
+        <test-method status="PASS" signature="readfile()[pri:0, instance:Emprix.Start.Empirix_Updated@4501b7af]" name="readfile" is-config="true" duration-ms="2" started-at="2020-01-20T07:15:48Z" finished-at="2020-01-20T07:15:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readfile -->
+        <test-method status="PASS" signature="Select_Japense_language()[pri:6, instance:Emprix.Start.Empirix_Updated@4501b7af]" name="Select_Japense_language" duration-ms="17798" started-at="2020-01-20T07:15:48Z" finished-at="2020-01-20T07:16:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Select_Japense_language -->
+        <test-method status="PASS" signature="readfile()[pri:0, instance:Emprix.Start.Empirix_Updated@4501b7af]" name="readfile" is-config="true" duration-ms="1" started-at="2020-01-20T07:16:05Z" finished-at="2020-01-20T07:16:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readfile -->
+        <test-method status="PASS" signature="logout()[pri:6, instance:Emprix.Start.Empirix_Updated@4501b7af]" name="logout" duration-ms="2138" started-at="2020-01-20T07:16:05Z" finished-at="2020-01-20T07:16:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- Emprix.Start.Empirix_Updated -->
+    </test> <!-- Testonchrome -->
+  </suite> <!-- Suite -->
 </testng-results>

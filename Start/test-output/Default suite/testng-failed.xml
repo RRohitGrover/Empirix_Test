@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Emprix.Start.Empirix_Test">
+      <class name="Emprix.Start.Empirix_Updated">
         <methods>
           <include name="login"/>
         </methods>
-      </class> <!-- Emprix.Start.Empirix_Test -->
+      </class> <!-- Emprix.Start.Empirix_Updated -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

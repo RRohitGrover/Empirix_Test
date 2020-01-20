@@ -1,19 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <parameter name="BrowserName" value="chrome"/>
-  <parameter name="url" value="https://services.empirix.com/"/>
-  <test name="Testwithchrome(failed)" parallel="tests">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="BrowserName" value="firefox"/>
+  <test name="Testonchrome(failed)" parallel="tests">
     <parameter name="BrowserName" value="chrome"/>
-    <parameter name="url" value="https://services.empirix.com/"/>
     <classes>
-      <class name="Emprix.Start.Empirix_Test">
+      <class name="Emprix.Start.Empirix_Updated">
         <methods>
-          <include name="teardowntest"/>
-          <include name="login" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="readfile"/>
+          <include name="readfile"/>
+          <include name="logout"/>
+          <include name="information"/>
           <include name="setuptest"/>
+          <include name="setuptest"/>
+          <include name="launch"/>
+          <include name="tabs"/>
+          <include name="Select_Japense_language"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- Emprix.Start.Empirix_Test -->
+      </class> <!-- Emprix.Start.Empirix_Updated -->
     </classes>
-  </test> <!-- Testwithchrome(failed) -->
+  </test> <!-- Testonchrome(failed) -->
+  <test name="Testonfirefox(failed)" parallel="tests">
+    <parameter name="BrowserName" value="firefox"/>
+    <classes>
+      <class name="Emprix.Start.Empirix_Updated">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="readfile"/>
+          <include name="readfile"/>
+          <include name="logout"/>
+          <include name="information"/>
+          <include name="setuptest"/>
+          <include name="setuptest"/>
+          <include name="tabs"/>
+          <include name="Select_Japense_language"/>
+        </methods>
+      </class> <!-- Emprix.Start.Empirix_Updated -->
+    </classes>
+  </test> <!-- Testonfirefox(failed) -->
 </suite> <!-- Failed suite [Suite] -->
